@@ -6,36 +6,35 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[12pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{banking}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
-% character encoding
-\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.78]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \firstname{Shaun}
 \familyname{Taheri}
-% \title{Curriculum vitae}
+% \title{Software Engineer}
 \address{Flat 520, 2 Silicon Way, London}{N1 6FH}
 \mobile{+44 7811 352 781}
 % \phone{+2~(345)~678~901}
 % \fax{+3~(456)~789~012}
 \email{shaun@taheris.co.uk}
-\homepage{github.com/taheris}
-% \extrainfo{www.taheris.co.uk}
+\homepage{www.taheris.co.uk}
+% \extrainfo{github.com/taheris}
 % \photo[64pt][0.4pt]{picture} % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Polyglot developer, interested in a challenging, technical role crafting well-engineered software that adds value.}
+\quote{Polyglot software developer, interested in crafting well-engineered software that adds business value.}
 
 \begin{document}
 \makecvtitle
@@ -43,36 +42,30 @@
 
 \section{Skills}
 \cvitem{Languages}{Java, JavaScript, Haskell, Python, C, SQL}
-\cvitem{Design}{Relational Databases, Object-oriented Programming, Functional Programming}
-\cvitem{Other}{HTML5, CSS3, node.js, Linux, NoSQL, Android Apps, Windows 8 Apps}
-\cvitem{Leadership}{Manager and mentor for junior developers; ran weekly university poker society tournaments for hundreds of members}
+\cvitem{Modelling}{Relational Databases, Object-oriented Programming, Functional Programming}
+\cvitem{Computing}{HTML5, Node.js, Arch Linux, NoSQL, Android, Windows Store}
+\cvitem{Leadership}{Team manager and mentor for junior developers; ran weekly university poker society tournaments for hundreds of members}
 
 
 \section{Education}
-\cventry{2012--2013}{MSc Computer Science}{University College London}{}{}{Focus on data structures, software engineering, functional programming and information retrieval.}
-\cventry{2005--2009}{MA Economics}{University of Edinburgh}{}{}{Final year dissertation on approximating optimal play in Texas Hold'em Poker.}
+\cventry{2012 -- 2013}{MSc Computer Science}{University College London}{}{}{Focus on data structures, software engineering, functional programming and information retrieval.}
+\cventry{2005 -- 2009}{MA Economics}{University of Edinburgh}{}{}{Final year dissertation on approximating optimal play in Texas Hold'em Poker.}
 
 
 \section{Experience}
 % \subsection{Vocational}
-\cventry{2010--2012}{Technical Lead}{Centrica plc.}{Edinburgh}{}{
-Leading a team of 4 developers within the Operations Team with a key aim of moving disparate desktop applications to a cohesive web-based platform.
-\newline
+\cventry{2010 -- 2012}{Technical Lead}{Centrica plc.}{Edinburgh}{}{Lead a team of 4 analysts within the Operations Team, with a key aim of moving disparate desktop applications to a cohesive web-based platform.\newline
 \begin{itemize}
-\item Implemented a RESTful web server using node.js and JSON messaging through HTTP for an internal web portal supporting thousands of concurrent users.
+\item Implemented a RESTful web server using Node.js and JSON messaging through HTTP for an internal web portal supporting thousands of concurrent users.
 \item Real-time reporting interface provided with highcharts.js, used to provide a visual representation of incoming call types, reducing complex business reporting turnaround time from days to minutes.\newline
-\end{itemize}
-}
-\cventry{2008--2010}{MI Analyst}{Centrica plc.}{Edinburgh}{}{
-Extensive SAS experience for efficient data analysis on large data sets (billions of rows).
-\newline
+\end{itemize}}
+\cventry{2008 -- 2010}{MI Analyst}{Centrica plc.}{Edinburgh}{}{Extensive SAS experience for efficient data analysis on large sets of data (billions of rows).\newline
 \begin{itemize}
-\item Designed and implemented an automated, database-backed system that collates a wide range of data from external sources. Improvement over the previous, manual system in annual net revenue from £4m to £7m as a result.
-\item Developed scripts to automatically collate industry-wide data flows between suppliers removing the need for a manual entry process.
+\item Designed and implemented an automated, database-backed system that collates a wide range of data from external sources. Improvement over the previous, manual system in net revenue from £4m to £7m per annum as a result.
+\item Developed scripts to automatically collate industry-wide data flows between energy suppliers removing the need for a manual entry process.
 \item Implemented a project to identify customers with de-commissioned meter types that require replacement, with an automated system to send and track emails to relevant parties.
 \item Delivered reports to track messages sent to customers' meters, highlighting individual points of failure.
-\end{itemize}
-}
+\end{itemize}}
 
 % \section{Master thesis}
 % \cvitem{title}{\emph{Title}}
