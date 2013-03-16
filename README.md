@@ -1,3 +1,8 @@
+About
+=====
+
+The latest version of my cv can be found in the PDF in this repository.
+
 Credits
 =======
 
