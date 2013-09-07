@@ -2,7 +2,6 @@
  (lambda ()
     (TeX-run-style-hooks
      "geometry"
-     "textcomp"
      "inputenc"
      "utf8"
      "latex2e"

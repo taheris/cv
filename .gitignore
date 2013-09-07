@@ -3,5 +3,4 @@
 *.out
 *.swp
 *.synctex.gz
-*.fdb_latexmk
-*.fls
+auto/
