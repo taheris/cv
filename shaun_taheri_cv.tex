@@ -8,7 +8,7 @@
 \moderncvstyle{alt}
 \moderncvcolor{blue}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.79]{geometry}
 \nopagenumbers{}
 
 % personal data
@@ -16,10 +16,10 @@
 \familyname{Taheri}
 % \title{Software Engineer}
 \address{Zossener Straße 10}{10961 Berlin, Germany}
-\mobile{+49 157 3288 3289}
+\mobile{+49 176 4578 4178}
 % \phone{+2~(345)~678~901}
 % \fax{+3~(456)~789~012}
-\email{shaun@taheris.co.uk}
+\email{cv@taheris.co.uk}
 \homepage{www.taheris.co.uk}
 % \extrainfo{github.com/taheris}
 % \photo[64pt][0.4pt]{picture}
@@ -32,17 +32,28 @@
 \section{Skills}
 
 \cvitem{Languages}{Go, Python, Java, Julia, JavaScript, Ruby, Miranda,
-  C, Scheme, Bash, SQL, MATLAB}
+  C, Scheme, Bash, SQL}
 
 \cvitem{Design}{Object-oriented, Functional Programming, Relational
-  Database}
+  Databases, Microservices}
 
-\cvitem{Software}{Linux, OS X, Windows, Emacs, Vim, Git, Docker,
-  \LaTeX{}, PostgreSQL, ElasticSearch, SAS}
+\cvitem{Software}{Emacs, Vim, Git, Docker, Kafka, \LaTeX{},
+  PostgreSQL, ElasticSearch, SAS}
 
 \cvitem{Leadership}{Team manager and mentor for junior developers.}
 
 \section{Experience}
+
+\cventry{2014 -- 2015}{Senior Developer}{OptioPay}{Berlin}{}{Design
+  and implementation of a microservice-based architecture for a new
+  FinTech startup.
+\begin{itemize}
+\item Microservices implemented in Go, with Apache Kafka used as a
+  message broker and distributed database. An append-only event stream
+  is used to Event Source entity data from epoch, providing
+  fault-tolerant services that can partition workload and recover from
+  failures in seconds.
+\end{itemize}}
 
 \cventry{2013 -- 2014}{Senior Developer}{LShift}{London}{}{Broad
   consulting experience utilising deep technical expertise applied
@@ -62,32 +73,22 @@
   a team of four analysts within the Operations Team, with the aim of
   moving disparate desktop applications to a cohesive web-based
   platform.
-  \begin{itemize}
-    \item Implemented a RESTful web server using Node.js and JSON
-      messaging through HTTP for an internal web portal supporting
-      thousands of concurrent users.
-    \item Real-time reporting interface developed with highcharts.js,
-      used to provide a visual representation of incoming call centre
-      data. Reduction in complex business reporting turnaround time
-      from days to minutes.
-  \end{itemize}}
+\begin{itemize}
+\item Implemented a RESTful web server using Node.js and JSON
+  messaging through HTTP for an internal web portal supporting
+  thousands of concurrent users. Reduction in complex business
+  reporting turnaround time from days to minutes.
+\end{itemize}}
 
 \cventry{2008 -- 2010}{Data Analyst}{Centrica
   plc.}{Edinburgh}{}{Extensive SAS experience for efficient data
   analysis on terabyte scale datasets.
-  \begin{itemize}
-  \item Designed and implemented an automated relational database
-    system that collates a wide range of data from external sources.
-    Improvement over the previous system increased net revenue from
-    £4m to £7m per annum.
-  \item Analysis of multiple sources of industry data to identify
-    customers with de-commissioned meters. Subsequent development of
-    an automated system to send and track progress emails for their
-    replacement to the relevant parties.
-  \item Developed VBA scripts to automatically collate industry-wide
-    data flows between energy suppliers, removing the need for a
-    manual entry process.
-  \end{itemize}}
+\begin{itemize}
+\item Designed and implemented an automated relational database
+  system that collates a wide range of data from external sources.
+  Improvement over the previous system increased net revenue from
+  £4m to £7m per annum.
+\end{itemize}}
 
 \section{Education}
 
@@ -98,6 +99,6 @@
 
 \cventry{2005 -- 2009}{MA Economics}{University of
   Edinburgh}{}{}{Final year dissertation on approximating optimal play
-  in Texas Hold'em poker.}
+  in Texas Hold'em poker using Game Theory.}
 
 \end{document}
