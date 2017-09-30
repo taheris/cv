@@ -8,7 +8,7 @@
 \moderncvstyle{alt}
 \moderncvcolor{blue}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.8]{geometry}
 \nopagenumbers{}
 
 % personal data
@@ -23,7 +23,7 @@
 \homepage{github.com/taheris}
 % \extrainfo{}
 % \photo[64pt][0.4pt]{picture}
-\quote{Polyglot software engineer that likes simple solutions.}
+\quote{Polyglot distributed systems engineer.}
 
 
 \begin{document}
@@ -31,58 +31,83 @@
 
 \section{Skills}
 
-\cvitem{Languages}{Rust, Go, Julia, Python, JavaScript, Java, Miranda, C.}
+\cvitem{Languages}{
+  Rust, Go, Python, Julia, JavaScript, Java, Miranda, C, SAS, SQL.
+}
 
-\cvitem{Systems Design}{Any combination of: object-oriented or functional,
-  relational or non-relational, service-oriented or monolith.}
+\cvitem{Design}{
+  Experience with object-oriented or functional programming, relational or
+  non-relational databases, and service-oriented or monolithic architectures.
+}
 
-\cvitem{Production Software}{Kafka, Zookeeper, CoreOS, etcd,
-  Docker, Cassandra, SQL (multiple dialects).}
+\cvitem{Software}{
+  Kafka, Zookeeper, etcd, CoreOS, Docker, SkyDNS, Postgres, ElasticSearch, Yocto.
+}
 
 \section{Experience}
 
-\cventry{2016 -- present}{Senior Developer}{}{Advanced Telematic Systems}{Berlin}{
+\cventry{2016 -- Now}{Senior Developer}{}{Advanced Telematic Systems}{Berlin}{
 \begin{itemize}
-\item Built the reference implementation of a secure Software Over The Air
-  update client in Rust targetting embedded Linux fleets in the automotive industry.
-\item Implemented a three-thase commit process for mostly atomic updates of
-  multiple ECUs distributed in a vehicle using the CAN bus.
+\setlength\itemsep{0.2em}
+\item
+  Built an open-source reference implementation of a secure Software Over The
+  Air update client in Rust targetting embedded Linux fleets in the automotive
+  industry.
+\item
+  Implemented a three-phase commit process with crash recovery for mostly atomic
+  updates of multiple ECUs distributed in a vehicle.
 \end{itemize}}
 
+\thinspace
 \cventry{2014 -- 2016}{Senior Developer}{}{OptioPay}{Berlin}{
 \begin{itemize}
-\item Design and implementation of a microservice architecture in Go using Kafka
-  as a message broker and distributed database. An append-only event stream was
-  used to event source entity data from epoch for fault-tolerant services that
-  can partition high-volume workloads.
-\item Built the operations infrastructure with a continuous delivery pipeline of
-  services running in Docker containers across a fleet of CoreOS instances.
+\setlength\itemsep{0.2em}
+\item
+  Architect and implementation of microservices in Go using Kafka as a Protocol
+  Buffer message broker and distributed database. An append-only event stream
+  was used to event source entity data for fault-tolerant services that can
+  partition high volume workloads.
+\item
+  Built the operations infrastructure with a continuous delivery pipeline of
+  services running in Docker containers across a CoreOS fleet using SkyDNS
+  service discovery.
 \end{itemize}}
 
+\thinspace
 \cventry{2013 -- 2014}{Senior Developer}{}{LShift}{London}{
 \begin{itemize}
-\item Development of typesetting platform in Python and Ruby to automatically
-  extract content and structure from Google Docs and present template formatted
-  PDF output for academic research.
-\item Internal document crawler written in Go for distributed indexing and rapid
+\item
+  Development of typesetting platform in Python and Ruby to automatically
+  extract content and structure from Google Docs and present template-formatted
+  PDF output for academic publishing.
+\item
+  Internal document crawler written in Go for distributed indexing and rapid
   searching with ElasticSearch.
 \end{itemize}}
 
+\thinspace
 \cventry{2008 -- 2012}{Data $\rightarrow$ Senior Analyst}{}{British Gas}{Edinburgh}{
 \begin{itemize}
-\item Implemented an internal Node.js portal supporting thousands of concurrent
-  users. Reduction in complex business reporting turnaround time from days to minutes.
-\item Wrote SAS Data Step and ProcSQL queries for analysis on terabyte scale datasets.
-\item Implemented an automated relational database system for billing in Access with an
-  improvement over the previous system of £4m to £7m per annum.
+\setlength\itemsep{0.2em}
+\item
+  Automated a manual billing process by migrating business processes to a new
+  database with an improvement over the previous system from £4m to £7m per annum.
+\item
+  Analysis of terabyte-scale datasets using SAS Data Step and ProcSQL.
+\item
+  Implemented an internal Node.js portal supporting thousands of concurrent
+  users, reducing complex business reporting turnaround time from days to minutes.
 \end{itemize}}
 
 \section{Education}
 
 \cventry{2012 -- 2013}{MSc Computer Science}{}{University College London}{}{
-  One of the top performers with an overall exam average over 85\%.}
+  One of the top performers with an overall exam average of 85\%.
+}
 
-\cventry{2005 -- 2009}{MA Economics}{}{University of Edinburgh}{}{Dissertation
-  on approximating game-theoretically optimal play in Texas Hold'em.}
+\cventry{2005 -- 2009}{MA Economics}{}{University of Edinburgh}{}{
+  Dissertation on approximating game-theoretically optimal play in Texas
+  Hold'em poker.
+}
 
 \end{document}
