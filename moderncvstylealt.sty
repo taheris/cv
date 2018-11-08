@@ -77,7 +77,7 @@
     \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
       \addtomaketitle{\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}}%
     \ifthenelse{\isundefined{\@extrainfo}}{}{\addtomaketitle{\@extrainfo}}%
-    \flushmaketitle}\\[1em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
+    \flushmaketitle}\\[1.5em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
 
 
 %-------------------------------------------------------------------------------
@@ -88,7 +88,7 @@
 \renewcommand*{\titlefont}{\Huge\mdseries\upshape}
 \renewcommand*{\addressfont}{\normalsize\mdseries\upshape}
 \renewcommand*{\quotefont}{\large\slshape}
-\renewcommand*{\sectionfont}{\large\bfseries\upshape}
+\renewcommand*{\sectionfont}{\Large\bfseries\upshape}
 \renewcommand*{\subsectionfont}{\large\upshape\fontseries{sb}\selectfont}
 \renewcommand*{\hintfont}{\bfseries}
 

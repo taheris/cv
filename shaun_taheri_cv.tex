@@ -15,7 +15,7 @@
 \firstname{Shaun}
 \familyname{Taheri}
 % \title{Software Engineer}
-\address{Zossener Straße 10}{10961 Berlin, Germany}
+\address{Bastianstraße 20}{13357 Berlin, Germany}
 \mobile{+49176 4578 4178}
 % \phone{+2~(345)~678~901}
 % \fax{+3~(456)~789~012}
@@ -23,7 +23,7 @@
 \homepage{github.com/taheris}
 % \extrainfo{}
 % \photo[64pt][0.4pt]{picture}
-\quote{Polyglot distributed systems engineer.}
+% \quote{}
 
 
 \begin{document}
@@ -31,83 +31,86 @@
 
 \section{Skills}
 
-\cvitem{Languages}{
-  Rust, Go, Python, Julia, JavaScript, Java, Miranda, C, SAS, SQL.
+\cvitem{Design}{
+  Service-oriented distributed systems architecture from conception to delivery.
 }
 
-\cvitem{Design}{
-  Experience with object-oriented or functional programming, relational or
-  non-relational databases, and service-oriented or monolithic architectures.
+\cvitem{Languages}{
+  Polyglot experience across functional and object-oriented paradigms,
+  specialising in Rust for systems programming and the Nix ecosystem for
+  deterministic infrastructure.
 }
 
 \cvitem{Software}{
-  Kafka, Zookeeper, etcd, CoreOS, Docker, SkyDNS, Postgres, ElasticSearch, Yocto.
+  Kubernetes, Nix, Kafka, Postgres, Git, Docker, Emacs, Vim, Linux, macOS.
 }
 
 \section{Experience}
 
-\cventry{2016 -- Now}{Senior Developer}{}{Advanced Telematic Systems}{Berlin}{
+\cventry{2016 -- Now}{Senior Developer}{}{Advanced Telematic Systems
+  (acquired by HERE)}{Berlin}{
 \begin{itemize}
-\setlength\itemsep{0.2em}
+\setlength\itemsep{0.25em}
 \item
   Built an open-source reference implementation of a secure Software Over The
-  Air update client in Rust targetting embedded Linux fleets in the automotive
+  Air update client in Rust targeting embedded Linux fleets in the automotive
   industry.
 \item
-  Implemented a three-phase commit process with crash recovery for mostly atomic
-  updates of multiple ECUs distributed in a vehicle.
+  Infrastructure as Code utilising Nix for configuration management and
+  deterministic deployments of a distributed system across cloud and internal
+  data-center environments.
 \end{itemize}}
 
 \thinspace
-\cventry{2014 -- 2016}{Senior Developer}{}{OptioPay}{Berlin}{
+\cventry{2014 -- 2016}{Senior Developer}{}{Optiopay}{Berlin}{
 \begin{itemize}
-\setlength\itemsep{0.2em}
+\setlength\itemsep{0.25em}
 \item
-  Architect and implementation of microservices in Go using Kafka as a Protocol
-  Buffer message broker and distributed database. An append-only event stream
-  was used to event source entity data for fault-tolerant services that can
-  partition high volume workloads.
+  Design and implementation of a microservice architecture with Go services
+  using Kafka as an append-only event stream of ProtoBuf messages. Event
+  Sourcing was used to build fault-tolerant services that could partition high
+  volume workloads.
 \item
-  Built the operations infrastructure with a continuous delivery pipeline of
-  services running in Docker containers across a CoreOS fleet using SkyDNS
-  service discovery.
+  Built the continuous delivery operations infrastructure for a pipeline of
+  Docker services across a fleet of CoreOS machines using SkyDNS for service
+  discovery.
 \end{itemize}}
 
 \thinspace
 \cventry{2013 -- 2014}{Senior Developer}{}{LShift}{London}{
 \begin{itemize}
 \item
-  Development of typesetting platform in Python and Ruby to automatically
-  extract content and structure from Google Docs and present template-formatted
-  PDF output for academic publishing.
+  Development of a typesetting platform in Python to extract content and
+  structure from Google Docs and return template-formatted PDF documents for
+  academic publishing.
 \item
-  Internal document crawler written in Go for distributed indexing and rapid
-  searching with ElasticSearch.
+  Built an internal document crawler in Go using ElasticSearch for distributed
+  indexing and rapid searching over a large corpus.
 \end{itemize}}
 
 \thinspace
 \cventry{2008 -- 2012}{Data $\rightarrow$ Senior Analyst}{}{British Gas}{Edinburgh}{
 \begin{itemize}
-\setlength\itemsep{0.2em}
+\setlength\itemsep{0.25em}
 \item
-  Automated a manual billing process by migrating business processes to a new
-  database with an improvement over the previous system from £4m to £7m per annum.
+  Analysis of terabyte-scale datasets using SAS to automate manual billing
+  processes with an improvement over the previous system from £4m to £7m per
+  annum.
 \item
-  Analysis of terabyte-scale datasets using SAS Data Step and ProcSQL.
-\item
-  Implemented an internal Node.js portal supporting thousands of concurrent
-  users, reducing complex business reporting turnaround time from days to minutes.
+  Built an internal Node.js analytics portal supporting thousands of concurrent
+  users, reducing complex report turnaround time from days to minutes.
 \end{itemize}}
 
 \section{Education}
 
 \cventry{2012 -- 2013}{MSc Computer Science}{}{University College London}{}{
-  One of the top performers with an overall exam average of 85\%.
+  Electives in Functional Programming and Information Retrieval. One of the top
+  performers of the year with an exam average over 85\%.
 }
 
 \cventry{2005 -- 2009}{MA Economics}{}{University of Edinburgh}{}{
-  Dissertation on approximating game-theoretically optimal play in Texas
-  Hold'em poker.
+  Specialising in Game Theory, with a dissertation on approximating optimal play
+  in Texas Hold'em poker.
 }
 
 \end{document}
